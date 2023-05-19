@@ -45,6 +45,47 @@ header {
     margin: 10%;
 }
 
+.about h2 {
+    text-align: center;
+}
+
+.portfolio {
+    border: 1px solid black;
+    margin: 50px 30px;
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+.project {
+    border: 1px solid black;
+    position: relative;
+}
+
+.project h3, p, a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project img{
+    width: 600px;
+    height: auto;
+    display: flex;
+    margin: 15px auto;
+    border-radius: 10%;
+}
+
+.contact {
+    margin: 50px 30px;
+    border: 1px solid black;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
 form {
     max-width: 500px;
     margin: 0 auto;
