@@ -45,8 +45,7 @@ header {
 
 .container-2 * {
     border-radius: 30px;
-    margin: 50px auto;
-    max-width: 2000px;
+    margin: 50px 80px;
 }
 
 .about {
@@ -63,7 +62,7 @@ header {
 }
 
 .about p {
-    margin: 20px 15%;
+    margin: 50px 200px;
     line-height: 1.5;
 }
 
@@ -78,7 +77,7 @@ header {
 }
 
 .project {
-    /* position: relative; */
+    font-size: 1.3rem;
     background-image: url(./images/Zodiac_Screenshot.png);
     background-color: #474747d0;
     background-blend-mode: darken;
