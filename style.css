@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
 }
 
 header {
@@ -10,19 +12,23 @@ header {
     display: block;
     width: 100%;
     height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: #5f9e4f;
+    z-index: 1000;
 }
 
 .title {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
-    display: block;
+    display: inline-block;
     display: flex;
     height: auto;
     justify-content: space-evenly;
 }
 
 .menu {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
     display: block;
     display: flex;
@@ -31,27 +37,40 @@ header {
 }
 
 .title h4, .menu h4 {
-    border: 1px solid black;
-    margin: 10px;
+    /* border: 1px solid black; */
+    margin: 10px 10px;
     height: auto;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+}
+
+.container-2 * {
+    border-radius: 30px;
+    margin: 50px auto;
+    max-width: 2000px;
 }
 
 .about {
-    border: 2px solid blue;
-    font-size: 1.5rem;
+    border: 2px solid black;
+    font-size: 1.6rem;
     font-weight: 500;
-    text-align: justify;
-    margin: 10%;
+    text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.452);
 }
 
 .about h2 {
     text-align: center;
 }
 
+.about p {
+    margin: 20px 15%;
+    line-height: 1.5;
+}
+
 .portfolio {
-    border: 1px solid black;
-    margin: 50px 30px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #f5f5f5;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.452);
 }
 
 .portfolio h2 {
@@ -59,8 +78,19 @@ header {
 }
 
 .project {
-    border: 1px solid black;
-    position: relative;
+    /* position: relative; */
+    background-image: url(./images/Zodiac_Screenshot.png);
+    background-color: #474747d0;
+    background-blend-mode: darken;
+    padding: 100px;
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #ebebeb;
 }
 
 .project h3, p, a{
@@ -69,55 +99,75 @@ header {
     justify-content: center;
 }
 
+.project a {
+    color: #0059ff;
+    font-weight: bold;
+}
+
 .project img{
-    width: 600px;
+    width: 25%;
     height: auto;
     display: flex;
     margin: 15px auto;
     border-radius: 10%;
+    opacity: 0.5;
 }
 
 .contact {
-    margin: 50px 30px;
-    border: 1px solid black;
+    border: 2px solid black;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.452);
 }
 
-.contact h2 {
+.contact h2{
     text-align: center;
+    padding: 20px;
+    /* border: 1px solid black; */
 }
 
 form {
-    max-width: 500px;
-    margin: 0 auto;
+    width: 90vh;
+    /* border: 1px solid black; */
 }
 
 label {
-    display: block;
-    margin: 10px;
     font-weight: bold;
 }
 
 
 input,
 textarea {
-  display: block;
   width: 100%;
+  height: 30px;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
+  font-size: 1.3rem;
+}
+
+textarea {
+    height: 100px;
 }
 
 button {
-    display: block;
-    background-color: #fcb00e;
+    background-color: #0ec4fc;
     color: #fff;
+    display: flex;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
 
   button:hover {
-    background-color: #db930c;
+    background-color: #59ff27;
   }
