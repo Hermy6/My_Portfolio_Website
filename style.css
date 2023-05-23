@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5rem;
-    background-color: whitesmoke;
+    background: conic-gradient(at top right, slategray, white);
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     height: 50px;
     position: sticky;
     top: 0;
-    background-color: #5f9e4f;
+    background-color: #53a3a3;
     z-index: 1000;
 }
 
@@ -154,7 +154,7 @@ textarea {
 }
 
 button {
-    background-color: #0ec4fc;
+    background-color: #5ea4b9;
     color: #fff;
     display: flex;
     border: none;
@@ -165,8 +165,9 @@ button {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.452);
   }
 
   button:hover {
-    background-color: #59ff27;
+    background-color: #5eb6b9;
   }
